@@ -13,7 +13,7 @@ const config = {
 
   future: { v4: true },
 
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://hackathon-i-physical-ai-humanoid-ro-one.vercel.app',
   baseUrl: '/',
   organizationName: 'facebook',
   projectName: 'docusaurus',
