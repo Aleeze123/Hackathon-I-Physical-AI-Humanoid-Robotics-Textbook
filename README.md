@@ -32,8 +32,6 @@ Backend: FastAPI, OpenAI SDK, LangChain
 Database: Neon PostgreSQL, Qdrant VectorDB
 
 
-
-
 🔗 Live Links
 🌐 Live Textbook: https://aleeze123.github.io/physical-ai-textbook
 🐙 GitHub Repo: https://github.com/Aleeze123/HackathonI-Physical-AI-Humanoid-Robotics-Textbook
