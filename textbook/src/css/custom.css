@@ -1,0 +1,361 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2563eb;        /* Primary Blue - Brand color */
+  --ifm-color-primary-dark: #1d4ed8;   /* Darker Blue - Hover states */
+  --ifm-color-primary-darker: #1e40af; /* Even Darker - Active states */
+  --ifm-color-primary-darkest: #1e3a8a; /* Darkest Blue - Pressed states */
+  --ifm-color-primary-light: #3b82f6;  /* Light Blue - Light variants */
+  --ifm-color-primary-lighter: #60a5fa; /* Lighter Blue - Backgrounds */
+  --ifm-color-primary-lightest: #93c5fd; /* Lightest Blue - Subtle backgrounds */
+  
+  /* Font size for code blocks */
+  --ifm-code-font-size: 95%;
+  
+  /* Background for highlighted code lines */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Optional: Additional blue theme adjustments */
+  --ifm-link-color: var(--ifm-color-primary-light);
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary-light);
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  --ifm-footer-link-color: var(--ifm-color-primary-lighter);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;        /* Soft Blue - Primary for dark mode */
+  --ifm-color-primary-dark: #3b82f6;   /* Medium Blue - Dark variant */
+  --ifm-color-primary-darker: #2563eb; /* Primary Blue - Darker variant */
+  --ifm-color-primary-darkest: #1d4ed8; /* Dark Blue - Darkest variant */
+  --ifm-color-primary-light: #93c5fd;  /* Light Blue - Light variant */
+  --ifm-color-primary-lighter: #bfdbfe; /* Very Light Blue - Lighter variant */
+  --ifm-color-primary-lightest: #dbeafe; /* Lightest Blue - Subtle backgrounds */
+  
+  /* Dark mode highlighted code lines */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  /* Optional: Dark mode specific adjustments */
+  --ifm-link-color: var(--ifm-color-primary-light);
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary-light);
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  --ifm-footer-link-color: var(--ifm-color-primary-lighter);
+  
+  /* Better contrast for dark mode */
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+}
+
+/* Optional: Custom styling for better blue theme integration */
+.navbar {
+  border-bottom: 2px solid var(--ifm-color-primary-light);
+}
+
+/* LIGHT MODE - Footer Light Gray with Dark Text */
+.footer {
+  background-color: #f3f4f6; /* Light gray background */
+  color: #1f2937; /* Dark gray text */
+}
+
+.footer .footer__link-item {
+  color: #4b5563; /* Medium gray links */
+}
+
+.footer .footer__link-item:hover {
+  color: #1f2937; /* Dark gray on hover */
+}
+
+.footer .footer__title {
+  color: #111827; /* Very dark gray titles */
+}
+
+.footer .footer__copyright {
+  color: #6b7280; /* Medium gray copyright */
+}
+
+/* DARK MODE - Footer Dark Gray with Light Text */
+[data-theme='dark'] .footer {
+  background-color: #374151; /* Dark gray background */
+  color: #f9fafb; /* Light gray text */
+}
+
+[data-theme='dark'] .footer .footer__link-item {
+  color: #d1d5db; /* Light gray links */
+}
+
+[data-theme='dark'] .footer .footer__link-item:hover {
+  color: #ffffff; /* White on hover */
+}
+
+[data-theme='dark'] .footer .footer__title {
+  color: #f9fafb; /* Light gray titles */
+}
+
+[data-theme='dark'] .footer .footer__copyright {
+  color: #9ca3af; /* Medium light gray copyright */
+}
+
+/* Optional: Border on top */
+.footer {
+  border-top: 3px solid #d1d5db; /* Light gray border */
+}
+
+[data-theme='dark'] .footer {
+  border-top: 3px solid #4b5563; /* Medium gray border */
+}
+[data-theme='dark'] .footer {
+  border-top: 3px solid #2563eb; /* Medium blue border */
+}
+
+[data-theme='dark'] .footer {
+  border-top: 3px solid #60a5fa;
+}
+.menu__link--active {
+  font-weight: 600;
+}
+
+/* Button styling enhancements */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+/* Card styling with blue theme */
+.card {
+  border: 1px solid var(--ifm-color-primary-lightest);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary-light);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+/* Code block styling */
+pre {
+  border-left: 4px solid var(--ifm-color-primary-light);
+}
+
+/* Table styling */
+table {
+  border: 1px solid var(--ifm-color-primary-lightest);
+}
+
+th {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+}
+
+/* Alert boxes with blue theme */
+.alert--info {
+  border-left-color: var(--ifm-color-primary);
+}
+
+.alert--success {
+  border-left-color: var(--ifm-color-primary-light);
+}
+
+/* Pagination */
+.pagination-nav__link {
+  border-color: var(--ifm-color-primary-lightest);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary-light);
+}
+
+/* Tabs */
+.tabs {
+  border-bottom-color: var(--ifm-color-primary-lightest);
+}
+
+.tabs__item--active {
+  border-bottom-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+/* Breadcrumbs */
+.breadcrumbs__link {
+  color: var(--ifm-color-primary-light);
+}
+
+.breadcrumbs__link:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Sidebar adjustments */
+.menu {
+  border-right: 1px solid var(--ifm-color-primary-lightest);
+}
+#global-chatbot {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+}
+
+/* Navbar Profile Styles */
+.navbar-profile-container {
+  position: relative;
+}
+
+.navbar-profile-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.navbar-profile-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .navbar-profile-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-profile-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: currentColor;
+}
+
+.navbar-profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 280px;
+  padding: 0.75rem 0;
+  display: none;
+  z-index: 1000;
+  margin-top: 0.5rem;
+  border: 1px solid #eee;
+}
+
+.navbar-profile-dropdown.show {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem 1rem;
+}
+
+.user-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+}
+
+.user-email {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.125rem;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: #eee;
+  margin: 0.5rem 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
+}
+
+.dropdown-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #666;
+}
+
+/* Dark mode dropdown */
+[data-theme='dark'] .navbar-profile-dropdown {
+  background: #1a1a1a;
+  border-color: #333;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .user-name {
+  color: white;
+}
+
+[data-theme='dark'] .user-email {
+  color: #aaa;
+}
+
+[data-theme='dark'] .dropdown-divider {
+  background: #333;
+}
+
+[data-theme='dark'] .dropdown-item {
+  color: #ccc;
+}
+
+[data-theme='dark'] .dropdown-item:hover {
+  background-color: #2d2d2d;
+}
