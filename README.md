@@ -33,8 +33,8 @@ Database: Neon PostgreSQL, Qdrant VectorDB
 
 
 🔗 Live Links
-🌐 Live Textbook: https://aleeze123.github.io/physical-ai-textbook
-🐙 GitHub Repo: https://github.com/Aleeze123/HackathonI-Physical-AI-Humanoid-Robotics-Textbook
+🌐 Live Textbook: https://hackathon-i-physical-ai-humanoid-ro-one.vercel.app
+🐙 GitHub Repo: https://github.com/Aleeze123/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook
 
 📦 Setup
 Install dependencies: npm install
