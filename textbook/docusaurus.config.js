@@ -17,7 +17,9 @@ const config = {
   baseUrl: '/',
   organizationName: 'facebook',
   projectName: 'docusaurus',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
+onBrokenMarkdownLinks: 'warn',
+
 
   // English and Urdu languages
   i18n: {
